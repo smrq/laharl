@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaharlCSharp", "Laharl-CSharp\LaharlCSharp.csproj", "{0BC4497B-3964-4649-8A8F-2CA423C4BF2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laharl-CSharp", "Laharl-CSharp\Laharl-CSharp.csproj", "{0BC4497B-3964-4649-8A8F-2CA423C4BF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaharlCSharpTests", "LaharlCSharpTests\LaharlCSharpTests.csproj", "{1F7F84B5-18F1-4994-BFBF-F483ADB6492F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laharl-CSharp-Tests", "LaharlCSharpTests\Laharl-CSharp-Tests.csproj", "{1F7F84B5-18F1-4994-BFBF-F483ADB6492F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{A53C4090-C262-4079-B4FD-CB0470CFDBAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1659CF81-2675-4E62-8879-9E191C412793}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{DE66012C-636C-4533-8ED0-3588199FCCA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laharl-CSharp-TestFiles", "TestFiles\Laharl-CSharp-TestFiles.csproj", "{67041FD6-4B73-409F-BDEA-4D8BF4D567F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{1F7F84B5-18F1-4994-BFBF-F483ADB6492F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F7F84B5-18F1-4994-BFBF-F483ADB6492F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F7F84B5-18F1-4994-BFBF-F483ADB6492F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67041FD6-4B73-409F-BDEA-4D8BF4D567F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67041FD6-4B73-409F-BDEA-4D8BF4D567F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67041FD6-4B73-409F-BDEA-4D8BF4D567F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67041FD6-4B73-409F-BDEA-4D8BF4D567F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0BC4497B-3964-4649-8A8F-2CA423C4BF2A} = {A53C4090-C262-4079-B4FD-CB0470CFDBAF}
 		{1F7F84B5-18F1-4994-BFBF-F483ADB6492F} = {1659CF81-2675-4E62-8879-9E191C412793}
+		{67041FD6-4B73-409F-BDEA-4D8BF4D567F3} = {DE66012C-636C-4533-8ED0-3588199FCCA2}
 	EndGlobalSection
 EndGlobal

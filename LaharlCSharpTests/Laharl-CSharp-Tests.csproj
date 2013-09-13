@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LaharlCSharpTests</RootNamespace>
-    <AssemblyName>LaharlCSharpTests</AssemblyName>
+    <AssemblyName>Laharl-CSharp-Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,28 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\TestFile01-output.cs" />
-    <Compile Include="TestFiles.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TestFiles.resx</DependentUpon>
-    </Compile>
     <Compile Include="TestCompleteTransformations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TestFiles.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TestFiles.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\TestFile01-input.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Laharl-CSharp\LaharlCSharp.csproj">
+    <ProjectReference Include="..\Laharl-CSharp\Laharl-CSharp.csproj">
       <Project>{0bc4497b-3964-4649-8a8f-2ca423c4bf2a}</Project>
-      <Name>LaharlCSharp</Name>
+      <Name>Laharl-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestFiles\Laharl-CSharp-TestFiles.csproj">
+      <Project>{67041fd6-4b73-409f-bdea-4d8bf4d567f3}</Project>
+      <Name>Laharl-CSharp-TestFiles</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

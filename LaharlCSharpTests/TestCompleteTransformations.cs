@@ -1,5 +1,6 @@
 ﻿using System;
 using LaharlCSharp;
+using LaharlCSharpTestFiles;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LaharlCSharpTests
