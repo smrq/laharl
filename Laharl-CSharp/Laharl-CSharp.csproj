@@ -43,9 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BreakLines\BreakableNode.cs" />
+    <Compile Include="BreakLines\Line.cs" />
+    <Compile Include="BreakLines\Node.cs" />
+    <Compile Include="BreakLines\LineBreaker.cs" />
+    <Compile Include="BreakLines\TextNode.cs" />
+    <Compile Include="FormatLines\LineFormatter.cs" />
     <Compile Include="Formatter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeDump.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
