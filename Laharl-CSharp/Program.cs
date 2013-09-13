@@ -10,6 +10,8 @@ namespace LaharlCSharp
 	{
 		static void Main(string[] args)
 		{
+			var formatter = new Formatter();
+			formatter.ParseFile();
 		}
 	}
 }
