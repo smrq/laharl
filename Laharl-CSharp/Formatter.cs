@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LaharlCSharp
 {
-	class Program
+	public class Formatter
 	{
-		static void Main(string[] args)
+		public string Format(string input)
 		{
+			return input;
 		}
 	}
 }
