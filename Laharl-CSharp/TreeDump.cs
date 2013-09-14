@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace LaharlCSharp
 				var line = new String(' ', padding * 4) + prepend +
 										" " + node.GetType().ToString();
 				//Write the line
-				System.Console.WriteLine(line);
+				Debug.WriteLine(line);
 
 				padding++;
 				base.Visit(node);

@@ -14,7 +14,7 @@ namespace LaharlCSharp
 		static void Main(string[] args)
 		{
 			var formatter = new Formatter();
-			var result = formatter.Format(TestFiles.TestFile01_input);
+			var result = formatter.Format(TestFiles.TestFile02_input);
 			Debug.WriteLine(result);
 		}
 	}

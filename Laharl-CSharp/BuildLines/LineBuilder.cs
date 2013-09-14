@@ -12,7 +12,7 @@ namespace LaharlCSharp.BuildLines
 		{
 			var tree = SyntaxTree.ParseText(input);
 			var root = tree.GetRoot();
-
+			tree.ToConsole();
 			var builder = new NodeBuilder();
 			var walker = new NodeBuildingWalker(builder);
 			walker.Visit(root);
