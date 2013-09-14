@@ -10,12 +10,7 @@ namespace TestFile
 			System.Collections.Generic.IList<string> secondElementInDeepCollection,
 			System.Collections.Generic.IList<string> thirdElementInDeepCollection)
 		{
-			return new System.Collections.Generic.List<System.Collections.Generic.IList<string>>
-			{
-				firstElementInDeepCollection,
-				secondElementInDeepCollection,
-				thirdElementInDeepCollection
-			};
+			return null;
 		} 
 	}
 }

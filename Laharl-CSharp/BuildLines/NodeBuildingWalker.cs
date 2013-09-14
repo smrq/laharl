@@ -380,7 +380,7 @@ namespace LaharlCSharp.BuildLines
 
 		public override void VisitReturnStatement(ReturnStatementSyntax node)
 		{
-			base.VisitReturnStatement(node);
+			builder.AppendLine(node.ReturnKeyword + " " + node.Expression + node.SemicolonToken);
 		}
 
 		public override void VisitThrowStatement(ThrowStatementSyntax node)
