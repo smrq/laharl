@@ -64,7 +64,7 @@ namespace LaharlCSharpTestFiles {
         ///   Looks up a localized string similar to using System;
         ///namespace HelloWorld
         ///{
-        ///    class Program
+        ///    public static class Program
         ///    {
         ///        static void Main(string[] args)                        {
         ///                            Console.WriteLine(&quot;Hello, World!&quot;);
@@ -83,18 +83,57 @@ namespace LaharlCSharpTestFiles {
         ///
         ///namespace HelloWorld
         ///{
-        ///	class Program
+        ///	public static class Program
         ///	{
         ///		static void Main(string[] args)
         ///		{
         ///			Console.WriteLine(&quot;Hello, World!&quot;);
         ///		}
         ///	}
-        ///}.
+        ///}
+        ///.
         /// </summary>
         public static string TestFile01_output {
             get {
                 return ResourceManager.GetString("TestFile01_output", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Linq;
+        ///
+        ///namespace TestFile
+        ///{
+        ///	public class TestClass02
+        ///	{
+        ///		public System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;string&gt;&gt; MakeDeepCollection(System.Collections.Generic.IList&lt;string&gt; firstElementInDeepCollection, System.Collections.Generic.IList&lt;string&gt; secondElementInDeepCollection, System.Collections.Generic.IList&lt;string&gt; thirdElementInDeepCollection) {
+        ///			return new System.Collections.Generic.List&lt;System.Collections.Generic.IList&lt;string&gt;&gt; { firstElemen [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string TestFile02_input {
+            get {
+                return ResourceManager.GetString("TestFile02_input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to using System;
+        ///using System.Linq;
+        ///
+        ///namespace TestFile
+        ///{
+        ///	public class TestClass02
+        ///	{
+        ///		public System.Collections.Generic.IList&lt;System.Collections.Generic.IList&lt;string&gt;&gt; MakeDeepCollection(
+        ///			System.Collections.Generic.IList&lt;string&gt; firstElementInDeepCollection,
+        ///			System.Collections.Generic.IList&lt;string&gt; secondElementInDeepCollection,
+        ///			System.Collections.Generic.IList&lt;string&gt; thirdElementInDeepCollection)
+        ///		{
+        ///			return new System.Collections.Generic.List&lt;System.Collections.Generic.IList&lt;string [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string TestFile02_output {
+            get {
+                return ResourceManager.GetString("TestFile02_output", resourceCulture);
             }
         }
     }
