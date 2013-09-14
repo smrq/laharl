@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using LaharlCSharp.BreakLines;
+using LaharlCSharp.BuildLines;
 using LaharlCSharp.FormatLines;
 using Roslyn.Compilers.CSharp;
 
@@ -11,9 +12,7 @@ namespace LaharlCSharp
 	{
 		public string Format(string input)
 		{
-			var tree = SyntaxTree.ParseText(input);
-			var root = tree.GetRoot();
-			var lines = PretendToDoFirstPass(root);
+			var lines = LineBuilder.Build(input);
 			var brokenLines = LineBreaker.Break(lines);
 			var formattedLines = LineFormatter.Format(brokenLines);
 			return formattedLines;

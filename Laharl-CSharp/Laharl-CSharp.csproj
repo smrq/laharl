@@ -48,6 +48,9 @@
     <Compile Include="BreakLines\Node.cs" />
     <Compile Include="BreakLines\LineBreaker.cs" />
     <Compile Include="BreakLines\TextNode.cs" />
+    <Compile Include="BuildLines\LineBuilder.cs" />
+    <Compile Include="BuildLines\NodeBuilder.cs" />
+    <Compile Include="BuildLines\NodeBuildingWalker.cs" />
     <Compile Include="FormatLines\LineFormatter.cs" />
     <Compile Include="Formatter.cs" />
     <Compile Include="Program.cs" />
